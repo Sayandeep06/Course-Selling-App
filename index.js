@@ -9,7 +9,12 @@ app.use("/api/v1/user", userRouter);
 app.use("/api/v1/course", courseRouter);
 app.use("/api/v1/admin", adminRouter);
 
-app.listen('3000',()=>{
-  console.log("Listening to port 3000")
-})
+async function main() {
+  await mongoose.connect("");
+  
+  app.listen('3000', () => {
+    console.log("Listening to port 3000")
+  })
+}
 
+main()

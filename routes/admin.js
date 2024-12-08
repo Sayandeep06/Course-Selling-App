@@ -14,19 +14,19 @@ adminRouter.post('/signup',(req,res)=>{
   })
 })
 
-adminRouter.post('/course',(req,res)=>{
+adminRouter.post('/',(req,res)=>{
   res.json({
     message: "create courses"
   })
 })
 
-adminRouter.put('/course',(req,res)=>{
+adminRouter.put('/',(req,res)=>{
   res.json({
     message: "create courses"
   })
 })
 
-adminRouter.get('/course',(req,res)=>{
+adminRouter.get('/bulk',(req,res)=>{
   res.json({
     message: "create courses"
   })
